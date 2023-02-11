@@ -1,6 +1,6 @@
 const menu = [
   {
-    text: 'About',
+    text: 'About Me',
     link: '#about',
   },
   {

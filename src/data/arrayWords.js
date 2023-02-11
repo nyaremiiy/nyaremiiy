@@ -126,7 +126,7 @@ const arrayWords = [
       fontSize: 'clamp(1rem, 0.491rem + 2.54vw, 2.813rem)',
       color: settings.colorTag,
     },
-  },
+  }
 ];
 
 export default arrayWords;

@@ -7,17 +7,25 @@
   transition: all 0.3s ease-in-out;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #020d21;
+  border: 3px solid #fee715;
   background-color: #fff;
 }
 
+@media (max-width: 1024px) {
+  .social {
+    right: -48px;
+  }
+  .open {
+    right: 20px;
+    background-color: #fff;
+  }
+}
 @media (max-width: 768px) {
   .social {
     right: -45px;
   }
   .open {
     right: 20px;
-  background-color: #fff;
-
+    background-color: #fff;
   }
 }

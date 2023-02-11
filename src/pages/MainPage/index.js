@@ -2,9 +2,9 @@ import {
   Social,
   Main,
   About,
-  Skills,
-  ProjectsM,
-  ContactMe,
+  // Skills,
+  // ProjectsM,
+  // ContactMe,
 } from '../../components';
 import s from './index.module.css';
 import { useState } from 'react';
@@ -39,15 +39,15 @@ const MainPage = () => {
   };
 
   return (
-    <div onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+    <div   onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
       <div className={`${isOpenSocial ? s.open : ''} ${s.social}`}>
         <Social />
       </div>
       <Main />
       <About />
-      <Skills />
-      <ProjectsM />
-      <ContactMe />
+      {/* <Skills /> */}
+      {/* <ProjectsM /> */}
+      {/* <ContactMe /> */}
     </div>
   );
 };
