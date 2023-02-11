@@ -7,8 +7,6 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/index';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,4 +18,3 @@ root.render(
 );
 
 titleScroll();
-gsap.registerPlugin(ScrollTrigger);

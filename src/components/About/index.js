@@ -1,29 +1,14 @@
 import s from './index.module.css';
 import { TitleH2 } from '../index';
-import { motion } from 'framer-motion';
-
-const textAnimation = {
-  hidden: {
-    x: -100,
-    opacity: 0
-  },
-  visible: custom =>( {
-    x: 0,
-    opacity: 1,
-    transition: {
-      delay: custom * 0.3
-    }
-  })
-}
 
 const About = () => {
   return (
-    <motion.section className={s.about} initial={'hiiden'} whileInView={'visible'}>
+    <section className={s.about}>
       <div className={`${s.wrapper} container`}>
         <div>
           <TitleH2 text='About' />
         </div>
-        <motion.div className={s.text} custom={2} variants={textAnimation}>
+        <div className={s.text}>
           {`{/* `}Congratulations! Glad to see you on the site. Well, let's
           start{`;)`} I have been doing programming for a long time. At first,
           it was a hobby that I did not take seriously, but later it grew into
@@ -47,9 +32,9 @@ const About = () => {
           If you need a website, an online store, or a business card website.
           Contact me, I am always ready to help and provide recommendations and
           promotion of your business.{`*/}`}
-        </motion.div>
+        </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

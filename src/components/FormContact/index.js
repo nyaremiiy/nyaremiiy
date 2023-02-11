@@ -30,7 +30,7 @@ const FormContact = () => {
   const handlerOnSubmitForm = (e) => {
     e.preventDefault();
     // ВИПРАВИТИ, ТИМЧАСОВЕ РІШЕННЯ
-    if(!formData.name && !formData.email && !formData.message) {
+    if (!formData.name && !formData.email && !formData.message) {
       return;
     }
 
