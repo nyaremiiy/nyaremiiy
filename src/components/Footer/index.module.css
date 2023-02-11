@@ -1,0 +1,24 @@
+
+ .footer {
+  background-color: var(--color-blue-dark);
+  color: #fff;
+ }
+ .wrapper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+
+ }
+ .logoLink {
+  text-decoration: none;
+  color: inherit;
+  font-size: clamp(0.75rem, 0.671rem + 0.63vw, 1.25rem);
+ }
+ .info {
+  letter-spacing: 1px;
+  line-height: 12px;
+  font-size: clamp(0.5rem, 0.421rem + 0.63vw, 1rem);
+ }

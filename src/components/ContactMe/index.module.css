@@ -1,0 +1,12 @@
+.contact {
+  background-color: #fff;
+  padding: clamp(1.875rem, 0.998rem + 4.39vw, 5rem) 0;
+}
+.form {
+  position: relative;
+  padding: clamp(0.625rem, 0.228rem + 3.17vw, 3.125rem) clamp(1.875rem, 1.677rem + 1.59vw, 3.125rem);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: clamp(1.25rem, 0.952rem + 2.38vw, 3.125rem) auto;
+  border-radius: 4px;
+  
+}

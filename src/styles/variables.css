@@ -1,0 +1,11 @@
+:root {
+  --color-bg-page: #f2f2f2;
+  --color-text: #202426;
+  --color-blue-dark: #101820;
+
+  --font-base: 'Inter', sans-serif;
+
+  --fsize: 16px;
+
+  --ltt-spacing: 0.2rem;
+}

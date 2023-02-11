@@ -1,0 +1,7 @@
+.title {
+  font-size: clamp(1.25rem, 1.075rem + 0.88vw, 1.875rem);
+  font-weight: 600;
+  color: inherit;
+  text-align: center;
+  text-transform: capitalize;
+}

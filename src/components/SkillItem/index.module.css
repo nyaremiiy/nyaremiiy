@@ -1,0 +1,24 @@
+.skill {
+  padding: 10px 10px 10px clamp(2rem, 1.684rem + 1.58vw, 3.125rem);
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 300;
+  font-size: clamp(0.5rem, 0.289rem + 1.05vw, 1.25rem);
+  background-color: #101820;
+  color: #fee715;
+  white-space: nowrap;
+  position: relative;
+  transition: all .2s;
+}
+.skill:hover {
+  box-shadow: rgba(255, 0, 0, 1) 3px 3px 3px;
+  cursor: pointer;
+}
+.icon {
+position: absolute;
+color: #fee715;
+left: 15px;
+top: 50%;
+transform: translateY(-50%);
+
+}

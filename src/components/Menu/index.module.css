@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+  align-items: center;
+  column-gap: clamp(1.25rem, -0.59rem + 3.83vw, 2.813rem);
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    padding: 120px 20px;
+    text-align: center;
+    z-index: 14;
+    position: fixed;
+    visibility: hidden;
+    transition: all 0.2s;
+    overflow: auto;
+    right: -100%;
+    top: 0;
+    min-height: 100vh;
+    bottom: 0;
+    background-color: #101820ff;
+    width: 80%;
+    color: #fff;
+  }
+  .list {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .open {
+    right: 0;
+    visibility: visible;
+  }
+}
+@media (max-width: 480px) {
+  .menu {
+    width: 100%;
+  }
+}

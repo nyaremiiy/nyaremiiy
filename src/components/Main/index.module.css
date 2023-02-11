@@ -1,0 +1,24 @@
+.main {
+  position: relative;
+  background-color: #020d21;
+  font-family: monospace, 'sans-serif';
+}
+.wrapper {
+  padding-top: clamp(1.875rem, 1.524rem + 1.75vw, 3.125rem);
+  padding-bottom: clamp(1.875rem, 1.524rem + 1.75vw, 3.125rem);
+  display: flex;
+  height: 100%;
+  min-height: 90vh;
+  align-items: center;
+}
+.box {
+  text-align: start;
+  font-weight: 700;
+  font-size: clamp(0.875rem, 0.068rem + 4.04vw, 3.75rem);
+}
+@media (min-width: 768px) {
+  .box {
+    max-width: 92%;
+  }
+}
+

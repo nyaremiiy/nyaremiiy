@@ -1,0 +1,17 @@
+.skills {
+  padding: clamp(1.875rem, 0.998rem + 4.39vw, 5rem) 0;
+}
+.skillsBox {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}.code {
+  margin-top: 20px;
+  line-height: 130%;
+  font-weight: 500;
+  font-size: clamp(0.5rem, 0.202rem + 1.49vw, 1.563rem);
+  color: #000;
+}

@@ -1,0 +1,23 @@
+.social {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #020d21;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .social {
+    right: -45px;
+  }
+  .open {
+    right: 20px;
+  background-color: #fff;
+
+  }
+}

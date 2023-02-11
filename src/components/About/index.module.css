@@ -1,0 +1,19 @@
+.about {
+  padding: clamp(1.875rem, 0.998rem + 4.39vw, 5rem) 0;
+  background-color: #f8f8f8;
+}
+.text {
+  margin: 30px auto 0 auto;
+  max-width: 70%;
+  letter-spacing: 0;
+  font-size: clamp(0.875rem, 0.7rem + 0.88vw, 1.5rem);
+  text-align: start;
+  line-height: clamp(1.875rem, 1.7rem + 0.88vw, 2.5rem);
+  color: #515151;
+}
+@media (max-width: 1024px) {
+  .text {
+    max-width: 100%;
+    margin: 30px 0 0 0;
+  }
+}

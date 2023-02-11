@@ -1,0 +1,40 @@
+.item {
+  list-style-type: none;
+  font-size: clamp(0.875rem, 0.598rem + 0.58vw, 1.125rem);
+  font-weight: 300;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+.link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  background-color: #FEE715FF ;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  transition: all .1s linear;
+  scale: 0;
+}
+.link:hover::before {
+  scale: 1;
+}
+
+@media (max-width: 1024px) {
+  .item {
+    font-size: 20px;
+    border: 1px solid #FEE715FF;
+    width: 100%;
+  }
+  .link {
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .link::before {
+    display: none;
+  }
+}

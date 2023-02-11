@@ -1,0 +1,67 @@
+.projects {
+  padding: clamp(1.875rem, 0.998rem + 4.39vw, 5rem) 0;
+}
+.cardBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 20px 30px;
+  margin-top: 30px;
+}
+.linkBox {
+  margin-top: clamp(1.875rem, 1.173rem + 3.51vw, 4.375rem);
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  --b: 3px;
+  --s: 0.45em;
+  --color: #373b44;
+  margin: 0 auto;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: clamp(0.5rem, 0.36rem + 0.7vw, 1rem);
+}
+
+.link:hover,
+.link:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.link:active {
+  background: var(--color);
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 768px) {
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
