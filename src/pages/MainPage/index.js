@@ -2,9 +2,9 @@ import {
   Social,
   Main,
   About,
-  // Skills,
-  // ProjectsM,
-  // ContactMe,
+  Skills,
+  ProjectsM,
+  ContactMe,
 } from '../../components';
 import s from './index.module.css';
 import { useState } from 'react';
@@ -45,9 +45,9 @@ const MainPage = () => {
       </div>
       <Main />
       <About />
-      {/* <Skills /> */}
-      {/* <ProjectsM /> */}
-      {/* <ContactMe /> */}
+      <Skills />
+      <ProjectsM />
+      <ContactMe />
     </div>
   );
 };
