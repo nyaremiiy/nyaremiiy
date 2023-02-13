@@ -3,7 +3,7 @@
   background-color: inherit;
 }
 .textBox {
-  margin-top: clamp(3.125rem, 1.897rem + 6.14vw, 7.5rem);
+  margin-top: clamp(2.5rem, 1.623rem + 4.39vw, 5.625rem);
   max-width: 90%;
 }
 .text {

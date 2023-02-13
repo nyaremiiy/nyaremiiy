@@ -6,6 +6,7 @@
   border-radius: 10px;
   position: relative;
   transition: all 0.3s ease-in-out;
+  border: 1px solid #fee715;
 }
 .projectCard:hover {
   background-color: #0e253c;
