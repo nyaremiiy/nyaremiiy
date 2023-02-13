@@ -2,6 +2,7 @@ import s from './index.module.css';
 import { TitleH2, ProjectCard } from '../index';
 import projects from '../../data/projects';
 
+
 const ProjectsM = () => {
   return (
     <section className={s.projects}>
@@ -13,7 +14,7 @@ const ProjectsM = () => {
           })}
         </div>
         <div className={s.linkBox}>
-          <a className={s.link} href='https://github.com/nyaremiy'>
+          <a className={s.link} href='https://github.com/nyaremiiy'>
             See more projects on my GitHub
           </a>
         </div>

@@ -2,11 +2,11 @@
   padding: clamp(1.875rem, 0.998rem + 4.39vw, 5rem) 0;
 }
 .cardBox {
+  margin-top: clamp(2.5rem, 1.623rem + 4.39vw, 5.625rem);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  justify-items: center; 
   gap: 20px 30px;
-  margin-top: 30px;
 }
 .linkBox {
   margin-top: clamp(1.875rem, 1.173rem + 3.51vw, 4.375rem);
@@ -16,7 +16,7 @@
   text-decoration: none;
   --b: 3px;
   --s: 0.45em;
-  --color: #373b44;
+  --color: #fee715;
   margin: 0 auto;
   padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
