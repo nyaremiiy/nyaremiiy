@@ -23,7 +23,7 @@ const Social = () => {
           <use xlinkHref='#icon-instagram'></use>
         </svg>
       </a>
-      <a className={s.item} href='https://www.facebook.com/yaremiy.nazar.9/' target="_blank" rel="noreferrer">
+      <a className={s.item} href='https://www.facebook.com/nyaremiiy/' target="_blank" rel="noreferrer">
         <svg className='icon icon-facebook'>
           <use xlinkHref='#icon-facebook'></use>
         </svg>
