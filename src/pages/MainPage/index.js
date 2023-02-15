@@ -4,7 +4,7 @@ import {
   About,
   Skills,
   ProjectsM,
-  ContactMe,
+  // ContactMe,
 } from '../../components';
 import s from './index.module.css';
 import { useState } from 'react';
@@ -47,7 +47,7 @@ const MainPage = () => {
       <About />
       <Skills />
       <ProjectsM />
-      <ContactMe />
+      {/* <ContactMe /> */}
     </div>
   );
 };

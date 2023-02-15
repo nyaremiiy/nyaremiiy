@@ -11,10 +11,10 @@ const menu = [
     text: 'Projects',
     link: '#projects',
   },
-  {
-    text: 'Contact me',
-    link: '#contact-me',
-  },
+  // {
+  //   text: 'Contact me',
+  //   link: '#contact-me',
+  // },
 ];
 
 export default menu;
