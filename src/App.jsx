@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import { Header } from './components';
+import { Header, Footer } from './components';
 import { useState } from 'react';
 import { MainPage } from './pages';
 
@@ -15,7 +15,7 @@ function App() {
           <Route path='/' element={<MainPage />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
