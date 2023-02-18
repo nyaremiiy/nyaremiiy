@@ -1,21 +1,22 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import { Header, Footer } from './components';
+// import { Header, Footer } from './components';
 import { useState } from 'react';
-import { MainPage } from './pages';
+import { DevPage } from './pages';
 
 function App() {
-  const [heightHeader, setHeaightHeader] = useState(0);
+  // const [heightHeader, setHeaightHeader] = useState(0);
 
   return (
     <div className='App'>
-      <Header setHeaightHeader={setHeaightHeader} />
-      <main style={{ paddingTop: `${heightHeader - 1}px` }}>
+      {/* <Header setHeaightHeader={setHeaightHeader} /> */}
+      {/* style={{ paddingTop: `${heightHeader - 1}px` }} */}
+      <main >
         <Routes>
-          <Route path='/' element={<MainPage />} />
+          <Route path='/' element={<DevPage />} />
         </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,0 +1,6 @@
+.dev {
+  text-align: center;
+  color: #fff;
+  font-size: clamp(0.75rem, 0.61rem + 0.7vw, 1.25rem);
+  line-height: clamp(1.25rem, 1.075rem + 0.88vw, 1.875rem);
+}

@@ -1,13 +1,9 @@
 import { createStore } from 'redux';
 
-
-const htmlElements = (state = {}, actions) => {
+const menuActive = (state = false, actions) => {
   switch (actions.type) {
-    case 'ADD_HTML_ELEMENT': {
-      return {
-        ...state,
-        [actions.data.name] : actions.data.data
-      };
+    case 'CLICK': {
+      return !state;
     }
     default: {
       return state;
@@ -15,9 +11,11 @@ const htmlElements = (state = {}, actions) => {
   }
 };
 
-export const store = createStore(htmlElements, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+export const store = createStore(
+  menuActive,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
-export const addHtmlElement = (data) => ({
-  type: 'ADD_HTML_ELEMENT',
-  data,
+export const addHtmlElement = () => ({
+  type: 'CLICK',
 });

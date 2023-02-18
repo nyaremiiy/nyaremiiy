@@ -2,10 +2,15 @@ import s from './index.module.css';
 import { BlurScreen, Logo, Menu, Burger } from '../index';
 import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+
 
 const Header = ({ setHeaightHeader }) => {
   const [isActiveBurger, setIsActiveBurger] = useState(false);
   const headerRef = useRef(null);
+  const dispatch = useDispatch();
+  const menuActive = useSelector(state => state);
+  console.log(menuActive);
 
 
   useEffect(() => {
