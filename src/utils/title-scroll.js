@@ -1,6 +1,6 @@
 const titleScroll = () => {
-    let start = 1000;
-    let speed = 250;
+  let start = 1000;
+  let speed = 250;
 
   window.addEventListener('load', () => {
     let title = document.title + ' /// ';

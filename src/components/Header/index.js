@@ -4,14 +4,12 @@ import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-
 const Header = ({ setHeaightHeader }) => {
   const [isActiveBurger, setIsActiveBurger] = useState(false);
   const headerRef = useRef(null);
   const dispatch = useDispatch();
-  const menuActive = useSelector(state => state);
+  const menuActive = useSelector((state) => state);
   console.log(menuActive);
-
 
   useEffect(() => {
     setHeaightHeader(headerRef.current.clientHeight);
@@ -26,14 +24,10 @@ const Header = ({ setHeaightHeader }) => {
   return (
     <>
       {isActiveBurger && <BlurScreen />}
-      <header
-        className={s.header}
-        ref={headerRef}     
-      >
+      <header className={s.header} ref={headerRef}>
         <div className={`${s.wrapper} container`}>
           <Link to='/' className={s.link}>
-            <Logo
-            />
+            <Logo />
           </Link>
           <div className={s.blockL}>
             <Menu
